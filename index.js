@@ -31,8 +31,8 @@
 
 /**
  * @typedef {Object} DerResult
- * @property {Buffer} privateKey
- * @property {Buffer} publicKey
+ * @property {Buffer} [privateKey]
+ * @property {Buffer} [publicKey]
  */
 
 /**
