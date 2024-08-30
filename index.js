@@ -1,23 +1,23 @@
 /**
  * @typedef {Object} KeyObj
  * @property {string} curveName
- * @property {Buffer | undefined} privateKey
- * @property {Buffer | undefined} publicKey
+ * @property {Buffer} [privateKey]
+ * @property {Buffer} [publicKey]
  */
 
 /**
  * @typedef {Object} KeyPair
- * @property {Buffer | undefined} sk
- * @property {Buffer | undefined} privateKey
- * @property {Buffer | undefined} pk
- * @property {Buffer | undefined} publicKey
+ * @property {Buffer} [sk]
+ * @property {Buffer} [privateKey]
+ * @property {Buffer} [pk]
+ * @property {Buffer} [publicKey]
  */
 
 /**
  * @typedef {Object} _Aio
- * @property {string | undefined} crv
- * @property {string | undefined} curve
- * @property {string | undefined} curveName
+ * @property {string} [crv]
+ * @property {string} [curve]
+ * @property {string} [curveName]
  * 
  * @typedef {KeyPair & _Aio} Aio
  */
@@ -68,15 +68,15 @@
 
 /**
  * @typedef {Object} JWKResult
- * @property {JWKPrivateKey | undefined} privateKey
- * @property {JWKPublicKey | undefined} publicKey
+ * @property {JWKPrivateKey} [privateKey]
+ * @property {JWKPublicKey} [publicKey]
  */
 
 /**
  * @typedef {Object} Jwk
  * @property {string} kty
  * @property {string} crv
- * @property {string | undefined} d
+ * @property {string} [d]
  * @property {string} x
  * @property {string} y
  */
